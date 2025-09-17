@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="./img/check-list.ico" />
+  </head>
+  <body>
+    <div class="todo-wrapper">
+      <div class="todoList">
+        <h1 class="todoList-title">Todo-List</h1>
+        <form id="form" class="todoList-form">
+          <input
+            id="inputTask"
+            required
+            type="text"
+            placeholder="Task name"
+            maxlength="15 "
+          />
+          <textarea
+            required
+            id="textareaTask"
+            placeholder="Task description"
+            maxlength="300"
+          ></textarea>
+          <button id="buttonTask" type="submit">to create</button>
+        </form>
+
+        <hr />
+        <div class="todoList-content">
+          <h2>Your tasks - <span id="quantity">0</span></h2>
+          <ul class="todo-task-column"></ul>
+
+          <div class="author">
+            <a
+              href="https://medok777.github.io/My-personal-site/"
+              target="_blank"
+              >Medok Jesus</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-modal">
+      <div class="modal">
+        <p></p>
+        <button id="close">close</button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
