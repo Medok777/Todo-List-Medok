@@ -1,0 +1,11 @@
+@media (max-width: 830px) {
+  .todoList {
+    width: 500px;
+  }
+}
+
+@media (max-width: 530px) {
+  .todoList {
+    width: 330px;
+  }
+}
