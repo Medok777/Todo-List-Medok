@@ -31,12 +31,16 @@ body {
 }
 
 .modal p {
-  max-width: 280px
+  overflow-wrap: break-word;
 }
 
 .todo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   padding: 10px;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,4 +229,5 @@ hr {
   color: #14ad30;
   text-decoration: line-through;
 }
+
 
