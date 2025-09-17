@@ -30,6 +30,10 @@ body {
   border-radius: 10px;
 }
 
+.modal p {
+  max-width: 280px
+}
+
 .todo-wrapper {
   padding: 10px;
   height: 100vh;
@@ -221,3 +225,4 @@ hr {
   color: #14ad30;
   text-decoration: line-through;
 }
+
