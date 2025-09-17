@@ -26,7 +26,7 @@ function addNewTask(event) {
   const taskHTML = `
   <div class="todo-task__text">
     <p class="color">${taskText}</p>
-    <button id="description">description</button>
+    <button id="descriptionBtn">description</button>
   </div>
   <div class="todo-task__btn">
     <button class="check-mark">
@@ -57,7 +57,7 @@ function numberTasks() {
 taskUl.addEventListener("click", (event) => {
   const deleteBtn = event.target.closest(".cross");
   const doneBtn = event.target.closest(".check-mark");
-  const descriptionBtn = event.target.closest("#description");
+  const descriptionBtn = event.target.closest("#descriptionBtn");
 
   if (deleteBtn) {
     const taskItem = deleteBtn.closest(".todo-task");
@@ -84,3 +84,4 @@ taskUl.addEventListener("click", (event) => {
 closeModalBtn.addEventListener("click", () => {
   modalTask.style.display = "none";
 });
+
