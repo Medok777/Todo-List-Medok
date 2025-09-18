@@ -48,6 +48,7 @@ function addNewTask(event) {
   textareaTask.value = "";
 
   numberTasks();
+  savedTasks();
 }
 
 function numberTasks() {
@@ -65,12 +66,14 @@ taskUl.addEventListener("click", (event) => {
 
     taskItem.remove();
     numberTasks();
+    savedTasks();
   }
 
   if (doneBtn) {
     const taskItem = doneBtn.closest(".todo-task");
     const taskText = taskItem.querySelector(".color");
     taskText.classList.toggle("color-text");
+    savedTasks();
   }
 
   if (descriptionBtn) {
@@ -85,6 +88,18 @@ taskUl.addEventListener("click", (event) => {
 closeModalBtn.addEventListener("click", () => {
   modalTask.style.display = "none";
 });
+
+function savedTasks() {
+  localStorage.setItem("SaveTasks", taskUl.innerHTML);
+}
+
+function showTasks() {
+  taskUl.innerHTML = localStorage.getItem("SaveTasks");
+}
+
+showTasks();
+
+
 
 
 
