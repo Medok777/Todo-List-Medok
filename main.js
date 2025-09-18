@@ -35,7 +35,7 @@ function addNewTask(event) {
     <button class="cross"><img src="./img/X.svg" alt="" /></button>
   </div>`;
 
-  if (taskNameInput.value === "") {
+  if (taskNameInput.value === " ") {
     alert("Specify the name of your task ❌")
     return
   } else {
@@ -100,6 +100,7 @@ function showTasks() {
 }
 
 showTasks();
+
 
 
 
