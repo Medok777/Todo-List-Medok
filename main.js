@@ -36,7 +36,8 @@ function addNewTask(event) {
   </div>`;
 
   if (taskNameInput.value === "") {
-    return;
+    alert("Specify the name of your task")
+    return
   }
 
   taskItem.dataset.description = taskdescription;
@@ -84,4 +85,5 @@ taskUl.addEventListener("click", (event) => {
 closeModalBtn.addEventListener("click", () => {
   modalTask.style.display = "none";
 });
+
 
