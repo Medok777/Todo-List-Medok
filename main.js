@@ -35,9 +35,11 @@ function addNewTask(event) {
     <button class="cross"><img src="./img/X.svg" alt="" /></button>
   </div>`;
 
-  if (taskNameInput.value === " ") {
-    alert("Specify the name of your task")
+  if (taskNameInput.value === "") {
+    alert("Specify the name of your task ❌")
     return
+  } else {
+    alert("the task has been successfully created! ✅")
   }
 
   taskItem.dataset.description = taskdescription;
@@ -98,6 +100,7 @@ function showTasks() {
 }
 
 showTasks();
+
 
 
 
